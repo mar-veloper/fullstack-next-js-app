@@ -9,6 +9,7 @@ Testing full-stack application of [Next.js](https://nextjs.org/)
 - Daisy UI
 - MySQL
 - Prisma
+- Zod
 
 ## Getting Started
 
