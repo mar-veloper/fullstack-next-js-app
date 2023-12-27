@@ -1,10 +1,11 @@
 Testing full-stack application of [Next.js](https://nextjs.org/)
 
-> Building a full application (Backend & Frontend) with authentication using NEXT JS only. I'm also trying the the new App Router of Next JS. This will be fun!!!
+> Building a full NEXT JS application (Backend & Frontend) with authentication using NextAuth. I'm also trying the the new App Router of Next JS. This will be fun!!!
 
 ## Notable tech & tools used
 
 - Next JS
+- NextAuth
 - Tailwind
 - Daisy UI
 - MySQL
