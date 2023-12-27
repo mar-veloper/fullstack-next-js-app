@@ -10,6 +10,7 @@ Testing full-stack application of [Next.js](https://nextjs.org/)
 - MySQL
 - Prisma
 - Zod
+- Cloudinary
 
 ## Getting Started
 
