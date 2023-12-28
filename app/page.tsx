@@ -1,14 +1,7 @@
-import Link from 'next/link'
-import ProductCard from './components/ProductCard'
-import { getServerSession } from 'next-auth'
-import { authOptions } from './api/auth/[...nextauth]/route'
-import Image from 'next/image'
-import coffeeOne from '@/public/images/coffee-one.jpg'
-import { Metadata } from 'next'
+'use client'
+import React from 'react'
 
-export default async function Home() {
-  const session = await getServerSession(authOptions)
-
+export default function Home() {
   return (
     <main className="relative h-screen">
       {/* <Image
@@ -21,6 +14,27 @@ export default async function Home() {
         priority={true}
       /> */}
       <h1>Hello World</h1>
+      <button
+        onClick={async () => {
+          const _ = (await import('lodash')).default
+          const users = [
+            {
+              name: 'c',
+            },
+            {
+              name: 'b',
+            },
+            {
+              name: 'a',
+            },
+          ]
+
+          const sortedUsers = _.orderBy(users, ['name'])
+          console.log(sortedUsers)
+        }}
+      >
+        Show
+      </button>
     </main>
   )
 }
@@ -35,16 +49,16 @@ export default async function Home() {
 //   },
 // }
 
-export async function generateMetadata(): Promise<Metadata> {
-  const data = await fetch('https://fakestoreapi.com/products/1')
+// export async function generateMetadata(): Promise<Metadata> {
+//   const data = await fetch('https://fakestoreapi.com/products/1')
 
-  return {
-    title: 'Testing title',
-    description: 'Testing description...',
-    openGraph: {
-      title: 'Testing social title',
-      description: 'Testing social description...',
-      images: 'https://bit.ly/3yqZLZU',
-    },
-  }
-}
+//   return {
+//     title: 'Testing title',
+//     description: 'Testing description...',
+//     openGraph: {
+//       title: 'Testing social title',
+//       description: 'Testing social description...',
+//       images: 'https://bit.ly/3yqZLZU',
+//     },
+//   }
+// }
