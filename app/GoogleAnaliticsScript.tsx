@@ -3,7 +3,7 @@ import React from 'react'
 
 const GoogleAnaliticsScript = () => {
   return (
-    <Script strategy="afterInteractive">{`
+    <Script strategy="afterInteractive" id="google-analytics">{`
   Insert your Google Analytics script here...
   `}</Script>
   )
